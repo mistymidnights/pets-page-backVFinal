@@ -1,0 +1,33 @@
+.pets-container {
+  background-color: var(--back-card);
+  height: 100vh;
+  padding: 100px 0px 40px 0px;
+}
+.profile-img-pets img {
+  height: 400px;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.252) 4px 4px 6px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+form {
+  margin-right: 0px;
+}
+label {
+  color: var(--text-color);
+}
+section {
+  background-color: var(--secondary-back);
+  padding-top: 70px;
+}
+@media (max-width: 576px) {
+  .profile-img-pets img {
+    height: 300px;
+  }
+}

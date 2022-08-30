@@ -1,0 +1,56 @@
+.profile-photo img {
+  clip-path: circle();
+  height: 300px;
+  margin-bottom: 30px;
+}
+.About-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color);
+  color: var(--back-card);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.aboutCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutCard h1 {
+  font-size: 35px;
+  transition: all 0.1s;
+}
+.aboutCard h2 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: lighter;
+  transition: all 0.1s;
+}
+svg {
+  font-size: 25px;
+  color: var(--back-card);
+  margin-right: 20px;
+}
+svg:hover {
+  color: var(--hover);
+}
+@media (max-width: 576px) {
+  .About-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 5%;
+  }
+  .profile-photo img {
+    height: 200px;
+    z-index: -1;
+  }
+  .aboutCard h1 {
+    font-size: 25px;
+  }
+}

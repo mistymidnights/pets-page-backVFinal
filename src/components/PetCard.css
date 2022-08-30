@@ -1,0 +1,34 @@
+.pet_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3rem;
+  background-color: var(--back-card);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.448) 4px 4px 4px;
+  overflow: hidden;
+}
+
+.profile_img_container img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile_img_container {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.contnet_container {
+  color: var(--secondary-back);
+  margin-bottom: 10px;
+}
+.connected {
+  color: green;
+}
+
+.disconnected {
+  color: red;
+}

@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: var(--primary-color);
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  height: 125px;
+  box-shadow: rgba(0, 0, 0, 0.238) 3px 3px 20px 3px;
+  z-index: 10;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+ul li .link {
+  color: var(--text-color);
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+ul li .link:hover {
+  color: var(--background-color);
+}
+.logo-container {
+  height: 120px;
+}
+
+.navMenu li a {
+  color: var(--text-color);
+}
+
+/*IMÁGEN DE PERFIL*/
+.avatar_container img {
+  height: 100%;
+  border-radius: 50%;
+  border: solid 2px #d6a9bd;
+}
+
+.avatar_container {
+  height: 40px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 40px;
+}
+
+.li_avatar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navMenu {
+  align-items: center;
+}
+.Welcome {
+  font-size: larger;
+  font-weight: bold;
+  color: darkseagreen;
+}
+.profileNav {
+  margin-right: 30px;
+}
+
+@media (max-width: 576px) {
+  .logo-container {
+    height: 70px;
+  }
+  .navMenu {
+    font-size: 12px;
+  }
+  header {
+    height: 80px;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    padding-right: 30px;
+  }
+  #toggle_checkbox:checked + label:before {
+    top: 20px;
+    right: 0;
+    left: 20;
+    width: 50px;
+    height: 27px;
+    border: 3px solid #143240;
+  }
+  #toggle_checkbox:checked + label:after {
+    top: 23px;
+    left: 94px;
+    width: 21px;
+    height: 21px;
+    border: 3px solid #8b5fbf;
+  }
+  .switchLabel:after {
+    top: 20px;
+    right: 0;
+    left: 20;
+    width: 50px;
+    height: 27px;
+    border: 3px solid #143240;
+  }
+  .Welcome {
+    display: none;
+  }
+  ul {
+    gap: 10px;
+  }
+  .profileNav {
+    margin-right: 10px;
+  }
+  .btn-logout {
+    width: 40px;
+    font-size: 10px;
+    padding: 0.6em 0.2em;
+  }
+}
+
+@media (max-width: 843px) {
+  header {
+    justify-content: flex-start;
+  }
+}
